@@ -1,0 +1,58 @@
+<div class="content">
+  <div class="ui-g top">
+    <div class="ui-g-8 topMenu"><p-breadcrumb [model]="items" styleClass="topMenu"></p-breadcrumb></div>
+    <div class="ui-g-4 topRight">
+      <div class="ui-g-4"><div class="kua"><span>Line VS</span></div></div>
+      <div class="ui-g-4 nowTime">2017.4.28 14:40</div>
+      <div class="ui-g-4">FUJITSU</div>
+    </div>
+  </div>
+  <div class="main"></div>
+  <div class="information">
+    <div class="txtList">
+      <div class="line">
+        <span class="txt">当日平均温度</span><span class="unit">℃</span><span class="noValue">22.5</span>
+      </div>
+      <div class="line">
+        <span class="txt">当日平均温度</span><span class="unit">%</span><span class="noValue">55.1</span>
+      </div>
+      <div class="line">
+        <span class="txt">在制品数量</span><span class="unit">片</span><span class="noValue">91</span>
+      </div>
+      <div class="lineBottom">
+        <span class="txt">之前1小时的生产数量</span><span class="unit">片</span><span class="noValue">521</span>
+      </div>
+    </div>
+    <div class="dayRatio">
+      <div class="ui-g mainRatio">
+        <div class="ui-g-3 comprehensive">
+          <p class="ratioTxt">当日综合效率</p>
+          <div class="cricle">
+            <app-ring [percentage] = "comprehensiveData" [cricleLength] = "cricleLength"></app-ring>
+          </div>
+        </div>
+        <div class="ui-g-3 degree">
+          <p class="ratioTxt">当日负荷度</p>
+          <div class="cricle">
+            <app-ring [percentage] = "degreeData" [cricleLength] = "cricleLength"></app-ring>
+          </div>
+        </div>
+        <div class="ui-g-3 goodYield">
+          <p class="ratioTxt">当日良品率</p>
+          <div class="cricle">
+            <app-ring [percentage] = "goodYieldData" [cricleLength] = "cricleLength"></app-ring>
+          </div>
+        </div>
+        <div class="ui-g-3 mobility">
+          <p class="ratioTxt">当日移动率</p>
+          <div class="cricle"> 
+            <app-ring [percentage] = "mobilityData" [cricleLength] = "cricleLength"></app-ring>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">2</div>
+    <div class="">2</div>
+    <div class="">2</div>
+  </div>
+</div>
